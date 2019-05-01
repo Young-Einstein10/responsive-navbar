@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mobilefirst Navigation Bar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="navbar.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="flex-container">
+                <div id="flex-logo">
+                    <h2><a href="#"><span>Epique</span> Web Design</a></h2>
+                </div>
+            </div>
+                        
+            <nav class="flex-nav">
+                <ul class="list-items" id="list-items">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>       
+            </nav>
+            
+            <span id="dropdown-img">
+                <img src="img/images (4).png" alt="img" style="width: 30px; height: 30px;">
+            </span>
+        </div>                     
+    </header>
+
+    <script>
+        let dropdown = document.getElementById("dropdown-img");
+        let dropdownListItems = document.getElementById('list-items');
+
+        dropdown.addEventListener('click', function() {
+            dropdownListItems.classList.toggle('active');
+        });
+    </script>   
+</body>
+</html>
+</body>
+</html>
